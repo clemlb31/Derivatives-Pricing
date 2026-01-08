@@ -61,7 +61,8 @@ pip install -e .
 
 ## Utilisation
 
-Les données proviennent de yfinance, le notebook data_pulling.ipynb peut être utiliser pour les télécharger
+Des données réelles peuvent être téléchargé de yfinance, avec le notebook data_pulling.ipynb
+
 
 **Note sur les imports** : Si le package n'est pas installé, ajoutez `src` au PYTHONPATH ou utilisez :
 
@@ -164,7 +165,7 @@ gamma = greeks_calc.gamma(S, K, T, r, sigma)
 vega = greeks_calc.vega(S, K, T, r, sigma)
 ```
 
-### Exemple : Comparaison Black-Scholes vs Monte Carlo
+### Exemple : Black-Scholes vs Monte Carlo
 
 ```python
 from pricing import BlackScholesPricer, MonteCarloPricer
